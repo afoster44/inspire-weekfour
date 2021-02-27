@@ -8,7 +8,6 @@ function _drawTask() {
     tasks.forEach(t => template += t.Template)
 
     let elem = document.getElementById('task')
-    debugger
     elem.innerHTML = template
 }
 
@@ -25,5 +24,9 @@ export default class TodoController {
             description: form.task.value
         }
         todoService.createTask(rawTodo)
+    }
+
+    deleteTask(_id) {
+        todoService.deleteTask(_id);
     }
 }
