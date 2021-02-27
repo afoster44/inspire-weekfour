@@ -15,7 +15,7 @@
     <main>
         <div class="container-fluid img-fluid" id="bg-img">
             <div class="row">
-                <div class="offset-10 col-2 text-center text-strong" id="weather">
+                <div class="offset-11 col-1 text-center text-strong bg-light" id="weather">
                     <p>temp</p>
                 </div>
             </div>
@@ -25,8 +25,8 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-6" id="quote">
-
+                <div class="col-6 text-strong">
+                    <div class="col-12 border shadow bg-light" id="quote"></div>
                 </div>
                 <div class="offset-1 col-5 todo">
                     <form class="form-inline" onsubmit="app.todoController.createTask(event)">
@@ -38,7 +38,7 @@
                     </form>
                     <div class="row">
 
-                        <div class="col-6" id="task">
+                        <div class="col-6 overflow-auto" min-height: 10vh; id="task">
 
                         </div>
 

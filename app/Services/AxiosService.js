@@ -16,3 +16,9 @@ export const todoApi = axios.create({
     baseURL: 'https://bcw-sandbox.herokuapp.com/api',
     timeout: 10000
 })
+
+/**@ts-ignore */
+export const quoteApi = axios.create({
+    baseURL: 'https://bcw-sandbox.herokuapp.com/api/quotes',
+    timeout: 10000
+})

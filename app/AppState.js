@@ -11,6 +11,10 @@ class AppState extends EventEmitter {
   /** @type {Image[]} */
   picture = []
 
+  quotes = []
+
+  author = []
+
   temperature = 0
 
   /** @type {Task[]} */
