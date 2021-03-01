@@ -12,6 +12,7 @@ class TodoService {
         try {
             const res = await todoApi.post('foster/todos', rawTodo)
             console.log(res.data);
+            this.getTask()
         } catch (error) {
             console.error(error)
         }
@@ -20,6 +21,7 @@ class TodoService {
     async getTask() {
         const res = await todoApi.get('foster/todos')
         console.log(res.data);
+
         ProxyState.tasks = res.data.map(t => new Task(t))
     }
 
@@ -27,7 +29,6 @@ class TodoService {
     async deleteTask(_id) {
         try {
             const res = await todoApi.delete(`foster/todos/${_id}`)
-            debugger
             this.getTask();
         } catch (error) {
             console.error(error)

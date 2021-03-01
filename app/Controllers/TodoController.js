@@ -7,8 +7,7 @@ function _drawTask() {
     let template = ''
     tasks.forEach(t => template += t.Template)
 
-    let elem = document.getElementById('task')
-    elem.innerHTML = template
+    document.getElementById('task').innerHTML = template
 }
 
 
